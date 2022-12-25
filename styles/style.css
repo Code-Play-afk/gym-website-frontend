@@ -15,18 +15,18 @@
   background-color: var(--darker-gray);
   color: var(--lighter-colr);
   display: flex;
-  height: 70px;
-  justify-content: space-between;
+  height: 100px;
+  justify-content: space-around;
   align-items: center;
 }
 div.header-elements {
-  margin-left: 15px;
+  /* margin-left: 300px; */
 }
 nav.header-elements {
-  width: 40%;
+  width: 400px;
+  /* align-content: right; */
 }
 .header-elements > ul {
-  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -35,6 +35,8 @@ ul {
   color: var(--lighter-colr);
   text-decoration: none;
   list-style: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 .nav-links > a:hover {
   text-decoration: underline;
