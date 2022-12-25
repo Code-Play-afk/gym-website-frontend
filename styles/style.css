@@ -11,6 +11,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Navbar CSS */
 .navbar {
   background-color: var(--darker-gray);
   color: var(--lighter-colr);
@@ -18,13 +19,18 @@
   height: 100px;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-div.header-elements {
-  /* margin-left: 300px; */
+div.header-elements > h1 > a {
+  color: var(--lighter-colr);
+  text-decoration: none;
+  cursor: pointer;
 }
 nav.header-elements {
   width: 400px;
-  /* align-content: right; */
 }
 .header-elements > ul {
   display: flex;
