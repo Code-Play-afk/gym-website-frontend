@@ -24,6 +24,7 @@
   background-attachment: scroll;
   background-size: cover;
   height: 100vh;
+  width: 100%;
 }
 .hero-items {
   display: inline-block;
@@ -54,16 +55,32 @@
   font-size: 14px;
   font-weight: bold;
   font-weight: 400;
-  background-color: var(--lighter-color);
+  background: linear-gradient(
+    to right,
+    var(--lighter-color) 50%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  background-position: right center;
+  border: 1px solid var(--lighter-color);
+  color: var(--lighter-color);
   width: 170px;
   margin: 10px 0px;
   height: 50px;
-  border: none;
   cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s, opacity 0.15s;
 }
-
+.hero-items > button:hover {
+  background-position: left center;
+  color: var(--darker-gray);
+}
+.hero-items > button:active {
+  opacity: 0.7;
+}
 /* About Preview CSS */
 .about-preview {
+  width: 100%;
   height: calc(100vh - 100px);
   background-color: var(--lighter-color);
   color: var(--darker-gray);
@@ -110,17 +127,25 @@ p.title {
 }
 .about-text-container > .btn-container > .btn {
   border: none;
-  background-color: var(--darker-gray);
+  background-color: var(--drak-gray);
   color: var(--lighter-color);
+  border: none;
   height: 50px;
   width: 150px;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 0.25s;
+}
+.about-text-container > .btn-container > .btn:hover {
+  background-color: black;
+}
+.about-text-container > .btn-container > .btn:active {
+  opacity: 0.7;
 }
 /* Banner Section CSS */
 .banner {
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.5),
@@ -148,6 +173,7 @@ p.title {
   color: var(--lighter-color);
   background-color: var(--drak-gray);
   height: 80vh;
+  width: 100%;
 }
 .testimonial-items {
   margin: 0 auto 50px;
@@ -174,9 +200,10 @@ p.title {
   border-radius: 10px;
   /* box-shadow: inset 2px 2px 05px rgba(255, 255, 255, 0.2); */
   cursor: pointer;
+  transition: all 0.25s;
 }
 .testimonials:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 .testimonials > h4 {
   font-size: 25px;

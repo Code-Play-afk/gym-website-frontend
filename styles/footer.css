@@ -14,6 +14,7 @@ footer {
   background-color: var(--darker-gray);
   color: var(--lighter-color);
   height: 55vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -36,6 +37,7 @@ footer {
   font-size: 25px;
   margin-right: 10px;
   cursor: pointer;
+  transition: all 0.15s;
 }
 .fa-brands:hover {
   scale: 1.2;
@@ -67,4 +69,18 @@ footer {
   height: 50px;
   font-size: 15px;
   width: 130px;
+  color: var(--lighter-color);
+  background-color: transparent;
+  border: 1px solid var(--lighter-color);
+  transition: all 0.15s;
+}
+.newsletter-container > button:hover {
+  background-color: var(--lighter-color);
+  color: var(--darker-gray);
+  /* color: var(--lighter-color);
+  border: 1px solid var(--lighter-color);
+  background-color: var(--darker-gray); */
+}
+.newsletter-container > button:active {
+  opacity: 0.7;
 }
