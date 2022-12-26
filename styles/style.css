@@ -154,3 +154,28 @@ p.title {
   margin-right: 20px;
   cursor: pointer;
 }
+/* Banner Section CSS */
+.banner {
+  height: 500px;
+  width: 100vw;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/img-3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.banner-items {
+  width: 550px;
+  margin-left: 300px;
+}
+.banner-items > h2 {
+  font-size: 70px;
+  color: var(--lighter-color);
+}
