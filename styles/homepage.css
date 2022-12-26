@@ -11,44 +11,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Navbar CSS */
-.navbar {
-  background-color: var(--darker-gray);
-  color: var(--lighter-color);
-  display: flex;
-  height: 100px;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-div.header-elements > h1 > a {
-  color: var(--lighter-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-nav.header-elements {
-  width: 400px;
-}
-.header-elements > ul {
-  display: flex;
-  justify-content: space-around;
-}
-.nav-links > a,
-ul {
-  color: var(--lighter-color);
-  text-decoration: none;
-  list-style: none;
-  font-size: 18px;
-  font-weight: 400;
-}
-.nav-links > a:hover {
-  text-decoration: underline;
-  color: white;
-}
-
 /* Hero Section CSS */
 .hero {
   /* margin-top: 100px; */
@@ -90,6 +52,7 @@ ul {
 .hero-items > button {
   display: inline-block;
   font-size: 14px;
+  font-weight: bold;
   font-weight: 400;
   background-color: var(--lighter-color);
   width: 170px;
