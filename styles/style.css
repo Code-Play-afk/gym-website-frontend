@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 :root {
-  --lighter-colr: rgb(235, 235, 239);
+  --lighter-color: rgb(235, 235, 239);
   --drak-gray: rgb(38, 32, 30);
   --darker-gray: rgb(13, 7, 5);
 }
@@ -14,7 +14,7 @@
 /* Navbar CSS */
 .navbar {
   background-color: var(--darker-gray);
-  color: var(--lighter-colr);
+  color: var(--lighter-color);
   display: flex;
   height: 100px;
   justify-content: space-around;
@@ -25,7 +25,7 @@
   right: 0;
 }
 div.header-elements > h1 > a {
-  color: var(--lighter-colr);
+  color: var(--lighter-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -38,7 +38,7 @@ nav.header-elements {
 }
 .nav-links > a,
 ul {
-  color: var(--lighter-colr);
+  color: var(--lighter-color);
   text-decoration: none;
   list-style: none;
   font-size: 18px;
@@ -46,4 +46,54 @@ ul {
 }
 .nav-links > a:hover {
   text-decoration: underline;
+}
+
+/* Hero Section CSS */
+.hero {
+  /* margin-top: 100px; */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/bg-img-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.hero-items {
+  display: inline-block;
+  margin-left: 200px;
+  /* width: 50%;*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--lighter-color);
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero-items > h2 {
+  width: 500px;
+  text-align: left;
+  margin: 10px 0;
+  font-size: 80px;
+}
+.hero-items > p {
+  margin: 10px 0;
+  text-align: left;
+  width: 500px;
+  font-size: 22px;
+  line-height: 30px;
+}
+.hero-items > button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--lighter-color);
+  width: 170px;
+  margin: 10px 0px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
 }
