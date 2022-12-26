@@ -46,6 +46,7 @@ ul {
 }
 .nav-links > a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 /* Hero Section CSS */
@@ -58,13 +59,13 @@ ul {
     ),
     url("../img/bg-img-2.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   height: 100vh;
 }
 .hero-items {
   display: inline-block;
-  margin-left: 200px;
+  margin-left: 400px;
   /* width: 50%;*/
   height: 100%;
   display: flex;
@@ -95,5 +96,61 @@ ul {
   margin: 10px 0px;
   height: 50px;
   border: none;
+  cursor: pointer;
+}
+
+/* About Preview CSS */
+.about-preview {
+  height: calc(100vh - 100px);
+  background-color: var(--lighter-color);
+  color: var(--darker-gray);
+  display: flex;
+  justify-content: center;
+}
+.about-preview-items {
+  width: 700px;
+}
+.about-preview-items > img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about-text-container {
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text-container > h2,
+.about-text-container > div,
+.about-text-container > p {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.about-text-container > h2 {
+  font-size: 70px;
+}
+.about-text-container > p {
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 35px;
+}
+p.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+.about-text-container > .btn-container > .btn {
+  border: none;
+  background-color: var(--darker-gray);
+  color: var(--lighter-color);
+  height: 50px;
+  width: 150px;
+  margin-right: 20px;
   cursor: pointer;
 }
