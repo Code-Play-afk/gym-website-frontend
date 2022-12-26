@@ -17,12 +17,16 @@
   color: var(--lighter-color);
   display: flex;
   height: 100px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
+}
+div.header-elements > h1 {
+  margin-left: 100px;
 }
 div.header-elements > h1 > a {
   color: var(--lighter-color);
@@ -31,6 +35,7 @@ div.header-elements > h1 > a {
 }
 nav.header-elements {
   width: 400px;
+  margin-right: 70px;
 }
 .header-elements > ul {
   display: flex;
