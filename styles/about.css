@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --lighter-color: rgb(235, 235, 239);
+  --drak-gray: rgb(38, 32, 30);
+  --darker-gray: rgb(13, 7, 5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero-section {
+  margin-top: 100px;
+  padding-top: 50px;
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/bg-img-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+.hero-section > h2 {
+  text-align: center;
+  width: 730px;
+  font-size: 90px;
+  color: var(--lighter-color);
+  margin: 50px auto;
+}
+.hero-section > div {
+  margin-top: 50px;
+  text-align: center;
+}
+.hero-section > div > img {
+  display: inline-block;
+  width: 150px;
+  filter: invert(100%);
+}
+
+.hero {
+  /* margin-top: 100px; */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/bg-img-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.hero-items {
+  display: inline-block;
+  margin-left: 400px;
+  /* width: 50%;*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--lighter-color);
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero-items > h2 {
+  width: 500px;
+  text-align: left;
+  margin: 10px 0;
+  font-size: 80px;
+}
+.hero-items > p {
+  margin: 10px 0;
+  text-align: left;
+  width: 500px;
+  font-size: 22px;
+  line-height: 30px;
+}
+.hero-items > button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 400;
+  background: linear-gradient(
+    to right,
+    var(--lighter-color) 50%,
+    transparent 50%
+  );
+  background-size: 200% 100%;
+  background-position: right center;
+  border: 1px solid var(--lighter-color);
+  color: var(--lighter-color);
+  width: 170px;
+  margin: 10px 0px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s, opacity 0.15s;
+}
+.hero-items > button:hover {
+  background-position: left center;
+  color: var(--darker-gray);
+}
+.hero-items > button:active {
+  opacity: 0.7;
+}
+
+/* Owner CSS */
+.owner-preview {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: var(--lighter-color);
+  color: var(--darker-gray);
+  display: flex;
+  justify-content: center;
+}
+.owner-preview-items {
+  width: 700px;
+}
+.owner-preview-items > img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.owner-text-container {
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.owner-text-container > h2,
+.owner-text-container > div,
+.owner-text-container > p {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.owner-text-container > h2 {
+  font-size: 70px;
+}
+.owner-text-container > p {
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 35px;
+}
+p.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+/* Banner Section CSS */
+.banner {
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/img-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+}
+.banner-items {
+  width: 1000px;
+  margin-left: 300px;
+}
+.banner-items > h2 {
+  font-size: 70px;
+  color: var(--lighter-color);
+}
+
+/* Team CSS */
+.team-preview {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: var(--lighter-color);
+  color: var(--darker-gray);
+  display: flex;
+  justify-content: center;
+}
+.team-preview-items {
+  width: 700px;
+}
+.team-preview-items > img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.team-text-container {
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-text-container > h2,
+.team-text-container > div,
+.team-text-container > p {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.team-text-container > h2 {
+  font-size: 70px;
+}
+.team-text-container > p {
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 35px;
+}
+p.title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+/* Banner Section CSS */
+.banner-2 {
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/img-6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.banner-2-items {
+  width: 700px;
+  margin-left: 300px;
+}
+.banner-2-items > h2 {
+  font-size: 70px;
+  color: var(--lighter-color);
+}
