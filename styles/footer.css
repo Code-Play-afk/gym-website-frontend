@@ -58,7 +58,7 @@ footer {
   padding-left: 20px;
 }
 .newsletter-container > input::placeholder {
-  color: var(--darker-gray);
+  color: rgb(94, 94, 94);
   font-size: 15px;
 }
 .newsletter-container > input:focus {
