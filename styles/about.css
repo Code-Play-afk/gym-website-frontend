@@ -1,15 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 :root {
   --lighter-color: rgb(235, 235, 239);
   --drak-gray: rgb(38, 32, 30);
   --darker-gray: rgb(13, 7, 5);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+
 .hero-section {
   margin-top: 100px;
   padding-top: 50px;
@@ -143,7 +137,7 @@
   font-size: 70px;
 }
 .owner-text-container > p {
-  font-size: 16px;
+  font-size: 18px;
   /* font-weight: 400; */
   line-height: 35px;
 }
@@ -217,7 +211,7 @@ p.title {
   font-size: 70px;
 }
 .team-text-container > p {
-  font-size: 16px;
+  font-size: 18px;
   /* font-weight: 400; */
   line-height: 35px;
 }

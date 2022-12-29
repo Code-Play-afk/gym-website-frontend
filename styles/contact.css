@@ -1,15 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 :root {
   --lighter-color: rgb(235, 235, 239);
   --drak-gray: rgb(38, 32, 30);
   --darker-gray: rgb(13, 7, 5);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+
 .hero-section {
   margin-top: 100px;
   padding-top: 50px;
@@ -110,11 +104,11 @@
   flex-direction: column;
 }
 .contact-container > p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 55px;
 }
 p.title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: 7px;
 }
@@ -159,7 +153,7 @@ p.icons > .fa-brands:hover {
 /* Contact Form CSS */
 .contact-form-section {
   width: 100%;
-  height: calc(70vh);
+  height: 700px;
   background-color: var(--drak-gray);
   color: var(--lighter-color);
   display: flex;
@@ -168,9 +162,9 @@ p.icons > .fa-brands:hover {
   align-items: flex-start;
 }
 .contact-form-items {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-right: 200px;
-  height: 300px;
+  height: 400px;
 }
 .contact-form-title {
   /* height: 100%; */
@@ -192,20 +186,22 @@ p.icons > .fa-brands:hover {
   width: 600px;
 }
 .contact-form-container > label {
-  font-size: 16px;
+  font-size: 17px;
 }
 .contact-form-container > input {
   padding: 10px;
   background-color: rgba(245, 248, 251, 0.6);
   height: 60px;
   margin-bottom: 10px;
+  font-size: 17px;
 }
 .contact-form-container > input::placeholder {
   color: rgb(94, 94, 94);
+  font-size: 17px;
 }
 .contact-form-container > textarea {
   padding: 10px;
-
+  font-size: 17px;
   background-color: rgba(245, 248, 251, 0.6);
   height: 200px;
 }
