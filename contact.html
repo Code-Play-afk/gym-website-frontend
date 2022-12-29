@@ -77,7 +77,8 @@
       <form
         id="contact-form"
         class="contact-form-items contact-form-container"
-        onsubmit="submitForm()"
+        action="https://formspree.io/f/mrgvzwvj"
+        method="POST"
       >
         <label for="Name">Name*</label>
         <input
@@ -110,9 +111,7 @@
           placeholder="Leave us a message"
           required
         ></textarea>
-        <button class="btn" type="submit" onclick="window.location.href='';">
-          SUBMIT
-        </button>
+        <button class="btn" type="submit">SUBMIT</button>
       </form>
     </section>
     <!-- Footer Section HTML -->
@@ -131,7 +130,8 @@
       <form
         id="newsletter-form"
         class="footer-items newsletter-container"
-        onsubmit="submitNewsletter()"
+        action="https://formspree.io/f/xzbqplle"
+        method="POST"
       >
         <h3>Newsletter Sign-up</h3>
         <label for="Newsletter-Email">Email Address*</label>
@@ -143,10 +143,8 @@
           placeholder="Your Email Address"
           required
         />
-        <button class="submit-btn" type="submit">SUBMIT</button>
+        <button class="submit-btn">SUBMIT</button>
       </form>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
