@@ -74,31 +74,45 @@
         <h2>Please Reach Us</h2>
         <h2 class="" hyphen>_</h2>
       </div>
-      <div class="contact-form-items contact-form-container">
+      <form
+        id="contact-form"
+        class="contact-form-items contact-form-container"
+        action="https://formspree.io/f/mrgvzwvj"
+        method="POST"
+      >
         <label for="Name">Name*</label>
-        <input type="text" id="Name" required placeholder="Your Full Name" />
+        <input
+          type="text"
+          id="Name"
+          name="full-name"
+          placeholder="Your Full Name"
+          required
+        />
         <label for="Email">Your Email*</label>
         <input
           type="email"
           id="Email"
-          required
+          name="email"
           placeholder="Your Email Address"
+          required
         />
         <label for="Number">Number*</label>
         <input
           type="tel"
           id="Number"
-          required
+          name="number"
           placeholder="Your Phone Number"
+          required
         />
         <label for="Message">Message*</label>
         <textarea
           id="Message"
-          required
+          name="message"
           placeholder="Leave us a message"
+          required
         ></textarea>
-        <button class="btn">SUBMIT</button>
-      </div>
+        <button class="btn" type="submit">SUBMIT</button>
+      </form>
     </section>
     <!-- Footer Section HTML -->
     <footer>
@@ -113,13 +127,24 @@
           &#169; 2022 theGoodDev. All Rights Reserved
         </p>
       </div>
-      <div class="footer-items newsletter-container">
+      <form
+        id="newsletter-form"
+        class="footer-items newsletter-container"
+        action="https://formspree.io/f/xzbqplle"
+        method="POST"
+      >
         <h3>Newsletter Sign-up</h3>
         <label for="Newsletter-Email">Email Address*</label>
-        <input type="email" id="Newsletter-Email"" required
-        id="Newsletter-Email" placeholder="Your Email Address" />
+        <input
+          type="email"
+          id="Newsletter-Email"
+          name="email"
+          id="Newsletter-Email"
+          placeholder="Your Email Address"
+          required
+        />
         <button class="submit-btn">SUBMIT</button>
-      </div>
+      </form>
     </footer>
   </body>
 </html>

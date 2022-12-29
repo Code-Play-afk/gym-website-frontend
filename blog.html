@@ -138,13 +138,24 @@
           &#169; 2022 theGoodDev. All Rights Reserved
         </p>
       </div>
-      <div class="footer-items newsletter-container">
+      <form
+        id="newsletter-form"
+        class="footer-items newsletter-container"
+        action="https://formspree.io/f/xzbqplle"
+        method="POST"
+      >
         <h3>Newsletter Sign-up</h3>
         <label for="Newsletter-Email">Email Address*</label>
-        <input type="email" id="Newsletter-Email"" required
-        id="Newsletter-Email" placeholder="Your Email Address" />
+        <input
+          type="email"
+          id="Newsletter-Email"
+          name="email"
+          id="Newsletter-Email"
+          placeholder="Your Email Address"
+          required
+        />
         <button class="submit-btn">SUBMIT</button>
-      </div>
+      </form>
     </footer>
   </body>
 </html>
